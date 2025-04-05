@@ -8,7 +8,7 @@ print(string)
 for i in string:
     asc = ord(i)
     print(i, asc)
-    if not (65<= asc <92 or asc == 32):
+    if not (65<= asc <=90 or asc == 32):
         valid = False
         break
 
