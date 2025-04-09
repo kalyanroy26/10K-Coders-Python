@@ -16,7 +16,7 @@ print(even)
 
 
 
-# #TASK -2 program to separate unq elements from last and add "*" at EOL 
+#TASK -2 program to separate unq elements from list and add "*" at EOL 
 
 num = [2,4,3,2,1,2,4,5,1]
 unq =[]
