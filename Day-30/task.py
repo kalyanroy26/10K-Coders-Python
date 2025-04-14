@@ -8,3 +8,6 @@ for i in list:
         max = i
 
 print(max, second_max)
+
+
+
