@@ -1,12 +1,12 @@
-list = [8,7,4,5,6,21,45,78,9,45,78,78]
-max = list[0]
-second_max = max
+list1 = [2, 3, 6, 6, 5]
 
-for i in list:
-    if i>max:
-        second_max = max
-        max = i
+list1 = list(set(list1))
 
+list1.sort(reverse=True)
+
+if len(list1)>1:
+    second_max = list1[1]
+    max = list1[0]
 print(max, second_max)
 
 
