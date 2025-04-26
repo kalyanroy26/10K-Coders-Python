@@ -39,11 +39,10 @@ else:
     mid = word_len//2
     print(string[mid])
 
-# 5). Write a program to check whether the sum of digits in the number except
+# 5). Write a program to check whether the sum of digits in the number except first digit and digit is equal to the sum of first digit and last digit of that number. If both the sums are equal then print equal otherwise print not equal
 
 num = 75547
 num = str(num)
-
 
 if len(num)<3:
     print("not equal")
@@ -55,3 +54,24 @@ else:
         print("Equal")
     else:
         print("Not Equal")
+
+# 6). Write a program to check whether the digits in-between the first and last digit are less than first and last digit, if yes then print true, otherwise print false
+num = 84719
+num = str(num)
+length = len(num)
+start = int(num[0])
+end = int(num[-1])
+
+if length%2==0:
+    mid1 = int(num[length//2])
+    mid2 = int(num[length//2-1])
+    if (mid1 < start and mid1 < end) and (mid2 < start and mid2 < end):
+        print(True)
+    else:
+        print(False)
+else:
+    mid = int(num[length//2])
+    if mid < start and mid < end:
+        print(True)
+    else:
+        print(False)
