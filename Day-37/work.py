@@ -80,3 +80,44 @@
 #     if i < min:
 #         min = i
 # print(max, min)
+
+#p8
+# string = "python DEveloper"
+# new_str = ""
+
+# for i in string:
+#     if 97<=ord(i)<=122:
+#         asc = ord(i)-32
+#         new_asc = chr(asc)
+#         new_str+=new_asc
+#     elif 65<=ord(i)<=91:
+#         asc = ord(i)+32
+#         new_asc = chr(asc)
+#         new_str+=new_asc
+
+# print(new_str)
+
+#p9
+# s = ['aaa','a','aa','aaaa']
+
+# for i in range(len(s)):
+#     for j in range(len(s)):
+#         if len(s[i])<len(s[j]):
+#             temp = s[i]
+#             s[i] = s[j]
+#             s[j] = temp
+
+# print(s)
+
+#p10
+num = 28
+sum = 0
+for i in range(1,num):
+    if num%i==0:
+        sum+=i
+
+if num == sum:
+    print("perfect")
+
+
+
