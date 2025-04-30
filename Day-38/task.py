@@ -10,36 +10,53 @@
 
 # print(present)
 
-#shortest substring in string
-s = "programming"
-shortest = s
+# #shortest substring in string
+# s = "programming"
+# shortest = s
 
-for i in range(len(s)):
-    temp = ''
-    for j in range(i,len(s)):
-        if s[j] not in temp:
-            temp+=s[j]
-        else:
-            break
+# for i in range(len(s)):
+#     temp = ''
+#     for j in range(i,len(s)):
+#         if s[j] not in temp:
+#             temp+=s[j]
+#         else:
+#             break
             
-    if len(temp) < len(shortest):
-        shortest = temp
+#     if len(temp) < len(shortest):
+#         shortest = temp
 
-print(shortest)
+# print(shortest)
 
-#longest
-s = "programming"
-longest = s
+# #longest sub string 
+# s = "programming"
+# longest = s
 
-for i in range(len(s)):
-    temp = ''
-    for j in range(i,len(s)):
-        if s[j] not in temp:
-            temp+=s[j]
-        else:
-            break
+# for i in range(len(s)):
+#     temp = ''
+#     for j in range(i,len(s)):
+#         if s[j] not in temp:
+#             temp+=s[j]
+#         else:
+#             break
             
-    if len(temp) < len(longest):
-        longest = temp
+#     if len(temp) < len(longest):
+#         longest = temp
 
-print(longest)
+# print(longest)
+
+# longest palindrome
+# s = "racecar"
+# longest = ""
+
+# for i in range(len(s)):
+#     temp = ''
+#     for j in range(i,len(s)):
+#         temp+=s[j]
+#         if temp == temp[::-1] and len(temp) > len(longest):
+#             longest = temp
+
+# print(longest)
+
+
+
+
