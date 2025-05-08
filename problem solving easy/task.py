@@ -75,3 +75,52 @@ else:
         print(True)
     else:
         print(False)
+
+
+# Write a program to print the vowels in the given string in reverse order.
+string = "HelloWorld"
+vowels = "aeiouAEIOU"
+v_l = []
+for i in string:
+    if i in vowels and i not in v_l:
+        v_l.append(i)
+
+print("".join(v_l))
+        
+
+# Write a program to print the vowels in the given string and repeated vowel should be printed only single time.
+string = "JackspArrow"
+vowels = "aeiouAEIOU"
+v_l = []
+for i in string:
+    if i in vowels:
+        v_l.append(i)
+
+print("".join(v_l[::-1]))
+        
+
+# Write a program to convert all the upper case letters in the given string to lower case letter and vice versa.
+string = "JohnWick"
+new = ''
+for i in string:
+    code = ord(i)
+    if 122>code>97:
+        new+=chr(code-32)
+    elif 90>code>65:
+        new+=chr(code+32)
+    else:
+         new+=i
+print(new)
+
+    
+
+#Write a program to print all the Upper case letters in the string in reverse order and then followed by the lower case letters .
+string = "ClassLeader"
+upper,lower = '',''
+for i in string:
+    code = ord(i)
+    if 90>code>65:
+        upper+=i
+    else:
+         lower+=i
+print(upper[::-1]+lower)

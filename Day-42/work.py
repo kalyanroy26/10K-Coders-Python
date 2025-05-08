@@ -143,17 +143,18 @@
 # *       *
 # *       *
 
+# 
 
-# rows = 5
-# mid = rows//2+1
-# for row in range(1,rows+1):
-#     res = ""
-#     for col in range(1,rows+1):
-#         if row == 1 or row == rows or row == mid or (row==2 and col == row-1) or (row==4 and col == rows):
-#             res+="*"+" "
-#         else:
-#             res+="  "
-#     print(res)
+rows = 5
+mid = rows//2+1
+for row in range(1,rows+1):
+    res = ""
+    for col in range(1,rows+1):
+        if row == 1 or row == rows or row == mid or (col==1 and row<mid):
+            res+="*"+" "
+        else: 
+            res+"  "
+    print(res)
 
 # * * * * * 
 # *
