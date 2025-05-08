@@ -7,6 +7,7 @@ for row in range(1,rows+1):
         else:
             res+="  "
     print(res)
+print("\n")
 
 # * * * * * 
 #       *   
@@ -23,7 +24,7 @@ for row in range(1,rows+1):
         else:
             res+="  "
     print(res)
-
+print("\n")
 # *       * 
 # * *     * 
 # *   *   *
@@ -40,7 +41,7 @@ for row in range(1,rows+1):
         else:
             res+="  "
     print(res)
-
+print("\n")
 
 # * * * * * 
 # *       * 
