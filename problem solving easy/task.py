@@ -124,3 +124,60 @@ for i in string:
     else:
          lower+=i
 print(upper[::-1]+lower)
+
+
+
+# program to reverse a string without extra variable using recursion
+def strReverse(s):
+    if len(s)==0:
+        return s    
+    return strReverse(s[1:])+s[0]
+
+print(strReverse('roy'))
+
+
+# program to print numbers using recursion
+def numPrint(n):
+    if n == 0:
+        return
+
+    numPrint(n-1)
+    print(n)
+
+numPrint(5)
+
+
+# program to find factorial using recursion
+def factorial(n):
+    if n == 1:
+        return n
+    
+    return n * factorial(n-1) 
+
+print(factorial(5))
+
+
+# program to find sum of number from 1 to itself using recursion
+def numSum(n):
+    if n == 1:
+        return n
+    
+    return n+numSum(n-1)
+
+print(numSum(10))
+
+
+# factorial using for loop
+n = 5
+fact = 1
+for i in range(n,0,-1):
+    fact*=i
+print(fact)
+
+# factorial using while 
+n = 5
+fact = 1
+while n>0:
+    fact*=n
+    n-=1
+print(fact)
