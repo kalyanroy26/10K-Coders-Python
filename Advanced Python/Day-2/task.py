@@ -52,22 +52,6 @@
 #             res+=" "+" "
 #     print(res)
 
-# longest non repeating sub string
-# str = "abcbcadbb"
-# long = ""
-# sub=""
-
-# for i in str:
-#     if i not in sub:
-#         sub+=i
-#     else:
-#         if len(sub)>len(long):
-#             print(sub)
-#             long = sub
-#             sub = ""
-# print(long)
-
-
 s = "abcbcadbb"
 longest = ""
 sub = ""
